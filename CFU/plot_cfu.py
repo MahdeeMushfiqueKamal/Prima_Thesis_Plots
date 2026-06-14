@@ -7,7 +7,7 @@ df = pd.read_csv("CFU  - Sheet5.csv")
 sns.set_theme(style="white")
 colors = sns.color_palette("tab10")
 
-fig, ax = plt.subplots(figsize=(8, 5))
+fig, ax = plt.subplots(figsize=(6, 5))
 
 strains = ["L.lactis", "L.lactis pMGI", "S.hominis"]
 
@@ -22,7 +22,6 @@ ax.set_ylim(7.5, 14)
 legend = ax.legend()
 for text in legend.get_texts():
     text.set_fontstyle("italic")
-sns.despine()
 
 plt.tight_layout()
 plt.savefig("cfu_plot.png", dpi=150, bbox_inches="tight")
