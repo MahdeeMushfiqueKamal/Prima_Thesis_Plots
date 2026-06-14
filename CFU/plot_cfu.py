@@ -17,7 +17,7 @@ for i, strain in enumerate(strains):
 ax.set_xlabel("Time (h)")
 ax.set_ylabel("$\\log_{10}$ CFU/mL")
 ax.set_xticks(range(0, int(df["Time"].max()) + 1, 2))
-ax.set_ylim(0, 20)
+ax.set_ylim(7.5, 13)
 
 legend = ax.legend()
 for text in legend.get_texts():
